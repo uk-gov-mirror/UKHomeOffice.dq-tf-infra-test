@@ -81,6 +81,7 @@ module "apps" {
     dq_pnr_archive             = "s3-dq-pnr-archive-${var.NAMESPACE}"
     dq_pnr_internal            = "s3-dq-pnr-internal-${var.NAMESPACE}"
     carrier_portal_docs        = "s3-dq-carrier-portal-docs-${var.NAMESPACE}"
+    dq_roro_tsv_archive        = "s3-dq-roro-tsv-archive-${var.NAMESPACE}"
   }
 
   s3_bucket_acl = {
@@ -141,7 +142,7 @@ module "apps" {
     dq_pnr_archive             = "private"
     dq_pnr_internal            = "private"
     carrier_portal_docs        = "private"
-
+    dq_roro_tsv_archive        = "private"
   }
 
   vpc_peering_connection_ids = {
